@@ -1,6 +1,0 @@
-{
-  "exclude": [
-    "**/*.spec.ts",
-    "config/*.js"
-  ]
-}
