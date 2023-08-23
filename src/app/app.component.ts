@@ -23,11 +23,4 @@ export class AppComponent implements OnInit{
     })
   }
 
-  someUselessMethod() {
-    const list = []
-    for (let i = 0; i < 10; i++) {
-      list.push(i)
-    }
-    return list
-  }
 }
