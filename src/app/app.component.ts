@@ -8,13 +8,16 @@ import {HttpClient} from "@angular/common/http";
 })
 export class AppComponent implements OnInit{
   apiUrl = "http://localhost:8080/users"
-  title = 'hello project';
+  title = 'learnci-ui';
   content = ''
 
   constructor(private httpClient: HttpClient) {
   }
 
   ngOnInit(): void {
+  }
+
+  onButtonClick() {
     this.httpClient.get(this.apiUrl).subscribe(res => {
       this.content = JSON.stringify(res)
     })
