@@ -22,4 +22,12 @@ export class AppComponent implements OnInit{
       this.content = JSON.stringify(res)
     })
   }
+
+  someUselessMethod() {
+    const list = []
+    for (let i = 0; i < 10; i++) {
+      list.push(i)
+    }
+    return list
+  }
 }
