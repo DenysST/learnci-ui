@@ -4,6 +4,6 @@ module.exports = {
   testMatch: ['**/+(*.)+(spec).+(ts)'],
   setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
   collectCoverage: true,
-  coverageReporters: ['html'],
+  coverageReporters: ['html', 'lcov'],
   coverageDirectory: 'coverage',
 };

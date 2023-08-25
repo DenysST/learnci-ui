@@ -23,4 +23,9 @@ describe('AppComponent', () => {
   it(`should have as title 'learnci-ui'`, () => {
     expect(app.title).toEqual('learnci-ui');
   });
+
+  it('should rise coverage', function () {
+    const result = app.someUselessMethod();
+    expect(result).toBeTruthy()
+  });
 });
